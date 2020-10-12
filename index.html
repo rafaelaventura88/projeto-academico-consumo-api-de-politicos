@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dados abertos: o site que mostra os políticos do Brasil">
+  <meta name="keywords" content="politica, partido, legislatura, transparência política">
+  <meta name="author" content="Rafaela Ventura">
+  <title>Dados Abertos</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="mini-container">
+        <img id="logo" src="img/R9ClELd.png" alt="" title="">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="exibirInicio()">Início</a></li>
+          <li><a href="#" onclick="exibirAssessment()">Assessment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <div id="inicio">
+        <h1>Quem são os deputados</h1>
+        <h2>Pesquise por um deputado e veja seus dados civis:</h2>
+
+        <div class="mini-container">
+          <form>
+            <input id="userInput" type="text" placeholder="Nome completo: " required>
+            <button type="button" onclick="buscaDetalhada()">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+
+
+      <div id="assessment">
+
+        <section class="secao_at">
+
+          <h3>Sobre meu bloco - HTML/CSS</h3>
+          <p>Dificuldades - O css foi minha maior dificuldade, como temia foi necessário utilizar flexbox
+            e infelizmente não tive tanto tempo hábil para aprofundar meus estudos no assunto;</p>
+          <p>Facilidades - Consegui entender o funcionamento do HTML e assimilei bem o passo a passo para estruturar as tags dentro do documento;</p>
+          <p>Descobertas - A disciplina como um todo foi uma descoberta, visto que, estudo TI há 11 meses apenas e nunca tinha entrado em contato com esse mundo de códigos e linguagens antes disso, então ver o funcionamento de HTML/CSS/JS tem sido uma grande descoberta, pois venho de outras áreas de atuação profissional como serviço público federal, Direito etc;</p>
+          <p>Afinidades - Senti afinidade com o desenvolvimento Back-end, mas ainda sou muito limitada, sobretudo na parte de lógica de programação e algoritmos, contudo acho lindo ver os eventos, decorrentes do uso dos métodos e funções que as linguagens de programação possuem.</p>
+        </section>
+
+        <section class="secao_at">
+          <h3>Sobre meu bloco - JS</h3>
+          <p>Dificuldades - Não ter conhecimento suficiente de POO foi uma grande dificuldade, precisei investir muitas horas de pesquisa no google, leitura em documentações, leitura em livros etc. para poder dar pequenos passos nessa disciplina, e ainda tenho que assimilar melhor alguns temas que foram abordados até aqui;</p>
+          <p>Facilidades - Infelizmente não tive facilidades, ainda estou no início da curva de aprendizado, e essa fase tende a ser muito difícil;</p>
+          <p>Descobertas - A linguagem JavaScript tem sido uma descoberta, nunca havia utilizado essa linguagem, sequer a conhecia;</p>
+          <p>Afinidades - Senti afinidade com o desenvolvimento Back-end, mas ainda sou muito limitada, sobretudo na parte de lógica de programação e algoritmos, contudo acho lindo ver os eventos decorrentes do uso dos métodos e funções que as linguagens de programação possuem.</p>
+        </section>
+
+        <section class="secao_at">
+          <h3> Cenário atual de Desenvolvimento web</h3>
+          <p>Oportunidades - Farta oferta de tutoriais online, livros e outros canais focados no ensino e prática do desenvolvimento;</p>
+          <p>Desafios - Desenvolver persistência, paciência e dedicação para começar a entender os princípios básicos da área de desenvolvimento web;</p>
+
+        </section>
+        <section class="secao_at">
+          <h3>Visão pessoal quanto à oportunidades e desafios</h3>
+          <p>Simular pequenos projeto, desde o uso das metodologias ágeis até a integração de API no Back-end, são verdadeiras oportunidades de ver como funciona o desenvolvimento de sites;</p>
+          <p>Desafios - Assimilar tantos conteúdos em um intervalo tão curto de tempo.</p>
+        </section>
+
+        <section class="secao_at">
+          <h3>Contatos</h3>
+          <p>Desenvolvedora : Rafaela Ventura</p>
+          <p class="fale"><i class="material-icons">contacts</i>LinkedIn: https://www.linkedin.com/in/rafaelaventura598/</p>
+          <p class="fale"><i class="material-icons">computer</i>
+            GitHub: https://github.com/rafaelaventura88</p>
+
+
+
+
+        </section>
+
+        <section>
+          <h3>Fale conosco</h3>
+          <form>
+            <fieldset id="faleConosco">
+              <p class="fale">
+                <label>Digite seu nome:</label>
+                <input id="nomeInput" type="text" placeholder="Digite seu nome" required>
+              </p>
+              <p class="fale">
+                <label>Digite seu email:</label>
+                <input id="emailInput" type="text" placeholder="Digite seu email" required>
+              </p>
+              <p class="fale">
+                <label>Digite sua mensagem:</label>
+                <textarea id="mensagemInput" placeholder="Digite sua mensagem" required></textarea>
+              </p>
+              <input id="inputEnviar" type="submit" value="Enviar">
+            </fieldset>
+          </form>
+
+        </section>
+      </div>
+
+    </main>
+    <footer>&copy;Copyrigth
+      <a id="topo" href="#logo">subir ao topo</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

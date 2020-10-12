@@ -1,0 +1,151 @@
+@import url("reset.css");
+
+body{
+  background: #03254c;
+  background-size: cover;/*pega a altura toda da página*/
+}
+
+.container{/*first mobile*/
+  width: 320px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.mini-container{
+  margin: 0 auto;
+  width: 50%;
+}
+
+ul li{
+  display:inline ;
+  margin: 10px;
+}
+
+ul{
+  margin-top: 30px;
+}
+
+ul li a{
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #e33c17;
+}
+
+ul li a:hover{
+  color: #03254c;
+}
+
+h1, h2, h3{
+  color: #03254c;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 30px;
+}
+
+h2{
+  background: #03254c;
+  color: white;
+  padding: 5px;
+}
+
+button{
+  width: 100%;
+  background: #03254c;
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  
+}
+
+button:hover, #inputEnviar:hover{
+  color:  #e33c17;
+}
+
+input{
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 20px;
+}
+.secao_at p:nth-child(odd){/*style para os filhos ímpares*/
+  background: white;
+  border: 1px solid white;
+  padding: 5px;
+  color: #03254c;
+  margin: 5px;
+  text-align: justify;
+}
+p{
+  background: #03254c;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+  
+}
+
+#assessment{
+  display: none;
+}
+
+.imgPolitico{
+  display: block;
+  width: 100px;
+}
+
+span{
+  display: block;
+  padding: 3px;
+}
+ input, textarea{
+   width: 95%;
+ }
+ #inputEnviar{
+  width: 98%;
+  background: #03254c;
+  color: white;
+  padding: 5px;
+ 
+}
+.overAuto{/*no script*/
+  overflow: auto;/*para texto não extrapolar container e receber barra de rolagem*/
+}
+
+.transition{/*no script*/
+  margin: 0 auto;
+  transition: 0.7s ease-out;/*o que significa ease-out msm?*/
+}
+
+.transition:hover{/*no script*/
+  transform: scale(2);/*são 2 segundos?*/
+  transform: rotate(180deg);/*valor da rotação*/
+  transition: 0.7s ease-in;/*o que significa ease-in msm?*/
+}
+
+.fale{
+  text-align: left;
+}
+#topo{
+ color: #03254c;
+  float: right;
+}
+
+#topo:hover{
+  color: #e33c17;
+}
+
+footer{
+ margin-top: 20px;
+  color:#03254c
+}
+
+@media(min-width: 768px){
+  .container{
+    width: 800px;
+  }
+}
+@media(min-width: 940px){
+  .container{
+    width: 940px;
+  }
+}

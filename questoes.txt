@@ -1,0 +1,96 @@
+Questões discursivas
+
+1) Quando é recomendando a criação de um site separado para mobile? Seria
+este o caso deste site da GK Fashion ou do site integrado de Interfaces com JS?
+
+Site mobile é próprio para dispositivos móveis sejam eles smartphones ou tablets, então são sites que se adaptam a todos os dispositivos 
+móveis independente do tamanho de tela, mas são sites que não são visualizados em computadores desktop ou notebooks. Recomendado
+para casos, em que a demanda pelo aplicativo é maior em dispositivos móveis de forma que o usuário terá interesse em baixar o aplicativo mobile.
+No caso do GK Fashion e do AT Integrado, não há necessidade de um site mobile, pois a aplicação principal é focada na web, de modo que
+a responsividade é suficiente, assim quando o usuário acessar tais sites fora do desktop será possível usar a aplicação ajustada para diferentes
+tamanhos de dispositivos.
+
+2) No caso de um CSS específico para print, como ele deve ser inserido?
+No caso de um CSS específico para print, para efeito de organização, podemos criar uma folha de estilo separada e chamá-la de print.css, por exemplo,
+e fazer o link dela no header. 
+
+ 
+3) O elemento audio permite como elemento‐filho o elemento source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os outros atributos do elemento audio e quando devem ser utilizados? 
+
+O source permite os seguintes atributos:
+-atributo src que descreve o endereço de arquivo de áudio (URL) ;
+-atributo type que indica o tipo do recurso de mídia.
+
+Caso haja necessidade de compatibilidade com todos os navegadores, uma proposta é usar dentro do elemento source o comando de arquivo áudio, que dentre os conteúdos que suporta, poderá ter formato ogg ou mpeg. Assim o navegador usará o primeiro formato de áudio que reconhecer, dessa forma o elemento source pode se conectar a diferentes arquivos de áudio.
+
+Já o elemento audio é uma tag nova do HTML5 e serve para reproduzir uma mídia de áudio.  Possui os seguintes atributos:
+-autoplay que serve para tocar automaticamente;
+-controls que serve para habilitar os controles do player;
+-loop que serve para repetir o áudio assim que sua reprodução terminar;
+-preload que serve para definir que o áudio será carregado enquanto a página é lida;
+-src que serve para indicar a url do arquivo a ser reproduzido.
+
+4) O elemento video permite como elemento‐filho o elemento source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os outros atributos do elemento video e quando devem ser utilizados? 
+
+O elemento source permite disponibilizar vídeos codificados em formatos diferentes para navegadores diferentes. Para especificar tais formatos o elemento source conta com o atributo type. Já para indicar o caminho de origem do vídeo temos o atributo src.
+
+ São exemplos de conteúdo suportado pelos navegadores os seguintes formatos:
+-ogg
+-mpeg-4 etc.
+Também é possível especificar os codecs que o arquivo de mídia requer, como por exemplo: Dirac e Speex. Se o navegador suportar Ogg, mas não suportar os codecs especificados, o vídeo não será reproduzido. O 
+
+O elemento vídeo também é uma tag nova do HTML5, serve para reproduzir uma mídia de vídeo. São atributos dessa tag:
+-width que serve para definir uma largura ao conteúdo;
+-height que serve para definir uma altura para o conteúdo;
+-controls que serve para habilitar os controles do player;
+
+
+
+
+
+
+5) No caso do canvas, HTML 5 nunca, em momento algum, fez qualquer animação. Isso porquê o HTML 5 é uma simples linguagem de marcação. Dessa forma, o que é necessário para criar animações com HTML5? O que são APIs do HTML5? 
+
+
+Para criar animações em HTML5  é necessário o usar  a tag <canvas>, que nada mais é do que um espaço onde podemos desenhar elementos específicos, formas geométricas, caracteres e imagens, essa tag pode ser estilizada por CSS. Cabe salientar, que não podemos colocar elementos HTML dentro de canvas.
+
+Canvas é composta por pixels como em um plano cartesiano que começam em x = 0 e y =0 no canto superior esquerdo onde x é crescente para a direita e y 
+é crescente para baixo. antes de desenhar, devemos selecionar a canvas e capturar o contexto gráfico da mesma, pelo método getContext().
+
+
+Existem diversos métodos para desenhar formas diferentes em Canvas, por exemplo:
+
+- os métodos moveTo(x,y), lineTo(x,y) e stroke() para desenhar linha;
+- os métodos arc(x,uy,r,aInicial,aFinal) e stroke() para desenhar círculo;
+- os métodos rect(x,y,largura,altura) e stroke() para desenhar retângulo;
+
+
+Para imagens precisaremos instanciar um objeto do tipo Image e adicionar ao método onload uma função que chama o método drawImage(Image,x,y) 
+e após dizer para o objeto do tipo Image qual a url da imagem.
+
+
+O HTML5 trouxe também um conjunto de novas funcionalidades encapsuladas em APIs, que podem ser acessadas via JavaScript. 
+As APIs próprias do HTML5 são mais específicas às funcionalidades que atuam no escopo da página e da manipulação de elementos, 
+se relacionam em grande parte com o DOM, são exemplos de APIs contidas na especificação do HTML5:
+-Canvas
+-Validação de formulários
+-Controles de áudio e vídeo
+-Application cache / offline applications
+-Funcionalidade de markup editável (contenteditable)
+-Drag and drop
+-Novas funcionalidades para manipulação do histórico do navegador
+
+6) Como o CSS3 pode ser aplicado na aparência da multimídia HTML5.   Demonstre com um exemplo.
+
+O CSS3 pode estilizar por exemplo a centralização de um vídeo:
+
+video {
+    margin: 0 auto;
+    width: 500px;
+}
+
+
+
+
+
+Fontes consultadas: https://www.devmedia.com.br/
